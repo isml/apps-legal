@@ -12,7 +12,7 @@
 <nav><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="support.html">Support</a></nav></header>
 
 <h1>Privacy Policy</h1>
-<p class="meta">Effective November 13, 2026 · Applies to the Lowcort iPhone app</p>
+<p class="meta">Effective November 13, 2026 · Updated November 13, 2026 · Applies to the Lowcort iPhone app</p>
 
 <div class="card">
 <strong>In short:</strong> Your Apple Health data and camera scans stay on your iPhone. We do not sell data, we do not track you across apps, and you do not need an account. If you choose to use the AI coach, only a short summary (no raw health samples, no name, no location) is sent to generate a reply, and only after you allow it.
@@ -49,7 +49,8 @@
 <tr><td>Anonymous user ID (random, created on first launch; no account)</td><td>Make the app work, link your subscription, enforce fair-use limits for the AI coach</td><td>Google Firebase (Authentication, App Check, Cloud Functions, Firestore)</td></tr>
 <tr><td>Purchase history (subscription status)</td><td>Unlock Lowcort Pro, restore purchases</td><td>RevenueCat, Apple</td></tr>
 <tr><td>Product interaction (which screens and features are used, e.g. "exercise completed"). <strong>Never health values.</strong></td><td>Improve the app</td><td>PostHog (US cloud; IP address discarded, no session recording)</td></tr>
-<tr><td>Crash and performance data</td><td>Fix bugs</td><td>Google Firebase Crashlytics</td></tr>
+<tr><td>Crash and performance data, with a random installation identifier (not your device's advertising ID)</td><td>Fix bugs</td><td>Google Firebase Crashlytics</td></tr>
+<tr><td>Messages you type to the AI coach (only if you allow the coach)</td><td>Generate the reply; not stored or logged by our server</td><td>Google Cloud / Vertex AI (Gemini)</td></tr>
 <tr><td>App settings (feature flags)</td><td>Configure features remotely</td><td>Google Firebase Remote Config</td></tr>
 </table>
 </div>
